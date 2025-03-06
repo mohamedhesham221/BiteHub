@@ -32,7 +32,8 @@ Check out the live version here: [BiteHub Live](https://vercel.com/mohamedhesham
 
 ## 📂 Folder Structure
 
-```food-landing-page/
+```
+food-landing-page/
     ├── assets/
     │   ├── img
     │   ├── css/
@@ -44,7 +45,8 @@ Check out the live version here: [BiteHub Live](https://vercel.com/mohamedhesham
     ├── .gitignore
     ├── tailwind.config.js
     ├── README.md
-    └── package.json```
+    └── package.json
+    ```
 
 ## 📌 Installation & Usage
 

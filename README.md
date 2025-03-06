@@ -46,7 +46,7 @@ food-landing-page/
     ├── tailwind.config.js
     ├── README.md
     └── package.json
-    ```
+```
 
 ## 📌 Installation & Usage
 

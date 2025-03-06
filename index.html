@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiteHub</title>
+  <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body class="min-h-[100vh]">
+  <!-- Header  -->
+  <header
+    class="relative flex flex-col md:flex-row justify-between md:items-center p-4 lg:px-14 overflow-hidden max-h-[5.5rem] drop-shadow-header-shadow gap-14 bg-third transition-all ease-in-out">
+    <img src="./assets/img/logo.png" alt="page logo" class="max-w-full w-14">
+    <!-- Navigation bar -->
+    <nav>
+      <ul class="flex flex-col gap-4 md:gap-7 md:items-center md:flex-row">
+        <li class="nav-item">
+          <a href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contact</a>
+        </li>
+        <li class="nav-item !text-third bg-primary w-fit rounded-[16px] py-1 px-3 drop-shadow-custom-shadow">
+          <a href="#menu">Menu</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hamburger icon -->
+    <div class="absolute z-50 flex flex-col items-end gap-1 top-10 right-5 md:hidden" id="hamburger">
+      <span class="transition-all hamburger-item"></span>
+      <span class="transition-all hamburger-item"></span>
+      <span class="!w-4 hamburger-item transition-all"></span>
+    </div>
+  </header>
+  <!-- Hero section -->
+  <section
+    class="h-[100vh] relative flex flex-col items-center justify-center
+  before:block before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[100vh] before:bg-secondary before:z-0
+  after:block after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-[100vh] after:bg-left after:bg-cover after:bg-no-repeat after:bg-[url(../../assets/img/hero-bg.png)] after:bg-opacity-50 lg:after:bg-fixed after:z-10 after:opacity-50 ">
+    <h1 class="relative z-40 flex flex-col text-center">
+      <span class="text-6xl md:text-8xl text-third font-lily">BiteHub</span>
+      <span class="text-3xl md:text-5xl font-poppins text-primary">RESTAURANT</span>
+    </h1>
+    <p
+      class="relative z-40 flex items-center gap-3 text-sm font-poppins text-primary before:inline-block before:content-[''] before:w-8 before:h-[2px] before:bg-primary after:inline-block after:content-[''] after:w-8 after:h-[2px] after:bg-primary last:mt-14 md:text-base lg:italic">
+      Free Home Delivery</p>
+
+  </section>
+  <!-- About us section -->
+  <section class="flex flex-col p-5 md:flex-row gap-y-12 bg-third">
+    <div class="flex flex-col gap-y-5 md:py-7 md:px-12" id="about">
+      <p class="italic font-bold text-secondary font-times">About Us</p>
+      <h2 class="mt-6 text-6xl lg:text-8xl font-lily text-primary drop-shadow-custom-shadow">Welcome</h2>
+      <p class="text-sm tracking-wide whitespace-pre-line font-times text-primary"> There are many variations of passages of Lorem
+        Ipsum available,
+        but the majority have suffered alteration in some form, by injected
+        humour, or randomised words which don't look even slightly believable.
+
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected
+        humour, or randomised words which don't look even slightly believable.</p>
+      <button
+        class="w-24 h-6 text-xs font-bold md:text-base md:h-8 md:w-36 font-poppins rounded-2xl text-third bg-primary drop-shadow-custom-shadow mt-14">
+        <a href="#menu">Today’s Menu</a>
+      </button>
+    </div>
+    <div class="relative md:w-[50%]">
+      <img src="./assets/img/Rectangle-8.png" alt="Beautiful served plate" class="max-w-full md:w-[90%] lg:w-1/2 md:absolute md:top-0 md:right-0">
+      <img src="./assets/img/Rectangle-9.png" alt="Two hamburger sandwiches"
+        class="mt-5 md:mt-0 md:absolute md:bottom-0 md:left-0 md:w-[90%] lg:w-1/2 lg:left-44">
+    </div>
+  </section>
+  <!-- Menu section -->
+  <section class="p-5 bg-third md:py-7 md:px-12" id="menu">
+    <h2
+      class="flex justify-center items-center gap-2 text-3xl font-lily text-primary before:block before:content-[''] before:w-8 before:h-[2px] before:bg-primary after:block after:content-[''] after:w-8 after:h-[2px] after:bg-primary drop-shadow-custom-shadow mb-4 md:text-5xl"
+      id="menu">Our Menu</h2>
+      <!-- Menu items -->
+    <article class="flex flex-col md:flex-row items-center p-4 py-7 gap-y-10 bg-secondary rounded-3xl text-primary max-h-[1120px] md:max-h-[450px] overflow-y-hidden md:flex-wrap md:justify-center md:gap-x-5 lg:w-[1068px] lg:mx-auto lg:justify-center">
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-1.png" alt="Chicken meal plate" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">ALFAHAM</span>
+          <span class="!text-xl">$ 460/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-2.png" alt="Mandhi meal" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">MANDHI</span>
+          <span class="!text-xl">$ 800/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-3.png" alt="Chicken biryani meal" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">CHICKEN BIRIYANI</span>
+          <span class="!text-xl">$ 140/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-4.png" alt="Shawrma meal" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">SHAWARMA</span>
+          <span class="!text-xl">$ 110/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-5.png" alt="Beef meal" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">BEEF</span>
+          <span class="!text-xl">$ 180/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-6.png" alt="Fish" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">FISH</span>
+          <span class="!text-xl">Seasonal</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-7.png" alt="Roasted Chicken" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto rounded-full">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">ROASTED CHICKEN</span>
+          <span class="!text-xl">$ 650/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-8.png" alt="Vegetarian rice" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto rounded-full">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">VEGETARIAN RICE</span>
+          <span class="!text-xl">$ 200/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-9.png" alt="Spaghitti" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto rounded-full">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">SPAGHITTI</span>
+          <span class="!text-xl">$ 115/-</span>
+        </p>
+      </div>
+      <!-- Menu item -->
+      <div class="menu-item">
+        <img src="./assets/img/Ellipse-10.png" alt="Grilled shrimp" class="drop-shadow-[0_0_2px_#F5980C] w-[110px] h-auto rounded-full">
+        <p class="menu-item_name">
+          <span class="!text-2xl text-start">GRILLED SHRIMP</span>
+          <span class="!text-xl">$ 540/-</span>
+        </p>
+      </div>
+    </article>
+      <!-- Discover button -->
+    <button
+      class="block h-6 px-3 mx-auto mt-10 text-xs font-bold w-34 md:text-base md:h-8 md:w-52 font-poppins rounded-2xl text-third bg-primary drop-shadow-custom-shadow" id="discover-menu">
+      Discover entire Menu
+    </button>
+  </section>
+  <!-- Footer  -->
+  <footer class="m-h-[100vh] p-5 relative before:block before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-secondary before:z-0
+  after:block after:content-[''] after:absolute after:top-0  after:left-0 after:w-full after:h-full after:bg-left after:bg-cover after:bg-no-repeat after:bg-[url(../../assets/img/footer-bg.png)] md:py-7 md:px-12 lg:h-[100vh] lg:grid lg:items-center">
+    <div class="relative z-40 flex flex-col lg:flex-row gap-y-8 lg:justify-center">
+      <div class="flex flex-col gap-y-3 lg:w-1/3 ">
+        <h2>
+          <span class="block text-5xl text-primary font-lily">BiteHub</span>
+          <span class="text-2xl font-poppins text-third">RESTAURANT</span>
+        </h2>
+        <p class="text-sm font-times text-primary">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+          It has roots in a piece of classical Latin literature from 45 BC, making 
+          it over 2000 years old. Richard McClintock, .</p>
+          <ul class="flex items-center gap-x-3 lg:mt-5">
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/facebook.png" alt="Facebook icon">
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/twitter.png" alt="Twitter icon">
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/instagram.png" alt="Instagram icon">
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/youtube.png" alt="Youtube icon">
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/paintrest.png" alt="Paintrest icon">
+              </a>
+            </li>
+          </ul>
+      </div>
+      <div class="lg:w-1/3">
+        <h2 class="text-2xl font-poppins text-third lg:w-fit lg:mx-auto">Location</h2>
+        <p class="text-primary font-times lg:w-fit lg:mx-auto">
+          <span class="block">Lorem</span>
+          <span>Lorem ipsum</span>
+        </p>
+      </div>
+      <div id="contact" class="lg:w-1/3">
+        <h2 class="text-2xl font-poppins text-third lg:w-fit lg:mx-auto">Contact Us</h2>
+        <p class="text-primary font-times lg:w-fit lg:mx-auto">
+          <span class="block">+91 2222 333 444</span>
+          <span>bitehub@example.com</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
